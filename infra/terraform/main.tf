@@ -1,5 +1,3 @@
-# infra/terraform/main.tf
-
 terraform {
   required_providers {
     aws = {
@@ -8,7 +6,6 @@ terraform {
     }
   }
 }
-
 provider "aws" {
   region                      = var.region
   access_key                  = var.access_key

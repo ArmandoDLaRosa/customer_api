@@ -1,5 +1,3 @@
-# infra/terraform/modules/s3/variables.tf
-
 variable "environment" {
   description = "The environment where resources are deployed (e.g., dev, prod)"
   type        = string

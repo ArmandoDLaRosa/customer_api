@@ -1,5 +1,3 @@
-# src/application/commands/delete_customer.py
-
 from domain.exceptions import CustomerNotFoundException
 from domain.events import CustomerDeletedEvent
 from datetime import datetime
