@@ -1,5 +1,3 @@
-# infra/terraform/backend.tf
-
 #terraform {
  # backend "s3" {
   #  bucket = "your-terraform-state-bucket"

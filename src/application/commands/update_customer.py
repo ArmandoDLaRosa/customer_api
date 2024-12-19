@@ -1,5 +1,3 @@
-# src/application/commands/update_customer.py
-
 from domain.exceptions import CustomerNotFoundException
 from datetime import datetime
 from domain.events import CustomerUpdatedEvent
