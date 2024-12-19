@@ -1,0 +1,17 @@
+summary: Get details of a specific customer
+parameters:
+  - name: customer_id
+    in: path
+    required: true
+    schema:
+      type: string
+    description: The ID of the customer
+responses:
+  '200':
+    description: Customer details retrieved
+    content:
+      application/json:
+        schema:
+          $ref: '../components/schemas.yml#/components/schemas/CreateCustomer'
+  '404':
+    description: Customer not found

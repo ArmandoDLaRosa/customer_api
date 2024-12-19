@@ -1,0 +1,15 @@
+summary: Delete a customer
+parameters:
+  - name: customer_id
+    in: path
+    required: true
+    schema:
+      type: string
+    description: The ID of the customer
+responses:
+  '204':
+    description: Customer deleted successfully
+  '404':
+    description: Customer not found
+security:
+  - bearerAuth: []

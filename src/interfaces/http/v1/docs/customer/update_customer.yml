@@ -1,0 +1,24 @@
+summary: Update an existing customer
+parameters:
+  - name: customer_id
+    in: path
+    required: true
+    schema:
+      type: string
+    description: The ID of the customer
+requestBody:
+  description: Customer data for update
+  required: true
+  content:
+    application/json:
+      schema:
+        $ref: '../components/schemas.yml#/components/schemas/CreateCustomer'
+responses:
+  '200':
+    description: Customer updated successfully
+    content:
+      application/json:
+        schema:
+          $ref: '../components/schemas.yml#/components/schemas/CreateCustomer'
+  '404':
+    description: Customer not found

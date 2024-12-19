@@ -1,0 +1,19 @@
+summary: Create a new customer
+requestBody:
+  description: Customer data needed for creation
+  required: true
+  content:
+    application/json:
+      schema:
+        $ref: '../components/schemas.yml#/components/schemas/CreateCustomer'
+responses:
+  '201':
+    description: Customer created successfully
+    content:
+      application/json:
+        schema:
+          $ref: '../components/schemas.yml#/components/schemas/CreateCustomer'
+  '400':
+    description: Invalid input data
+security:
+  - bearerAuth: []
