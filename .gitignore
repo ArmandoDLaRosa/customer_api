@@ -162,9 +162,9 @@ cython_debug/
 #.idea/
 infra/terraform/.terraform/*
 infra/terraform/.terraform.lock.hcl
-src/infrastructure/database/migrations/versions/*
 infra/terraform/.terraform.tfstate.lock.info
 infra/terraform/terraform.tfstate.backup
+infra/terraform/terraform.tfstate
+src/infrastructure/database/migrations/versions/*.py
 README_tmp.html
 output.pdf
-infra/terraform/terraform.tfstate
