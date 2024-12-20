@@ -69,6 +69,7 @@ Here’s a list of essential environment variables:
 2. Access the services:
    - **API:** [http://localhost:5000](http://localhost:5000)
    - **LocalStack:** [http://localhost:4566](http://localhost:4566) (for S3 testing)
+   - Mysql DB EXPOSED in 3307
 
 ### Running Tests with GitHub Actions
 This project includes a GitHub Actions workflow to automate testing. The workflow is located in `.github/workflows/test.yml` and runs on every push or pull request to the `main` branch. It sets up the environment, installs dependencies, and executes the test suite using `pytest`.
